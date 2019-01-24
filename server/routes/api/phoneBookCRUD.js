@@ -2,9 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 const phoneBookDb = require('../../models/phoneBook.db');
-phoneBookDb.create({name: 'Viktor G', phone: '+7 913 794 7579', email: 'test@qwe.com'});
-phoneBookDb.create({name: 'Mark R', phone: '+79139757579', email: 'test@qwe.com'});
+phoneBookDb.create({name: 'Vladislav G', phone: '+7 345 543 7979', email: 'test@qwe.com'});
+phoneBookDb.create({name: 'Mark R', phone: '+712397577777', email: 'test@qwe.com'});
 phoneBookDb.create({phone: '79137594779', email: 'test3@qwe.com'});
+phoneBookDb.create({name: 'Igor K. L.', phone: '+7 345 987 71212', email: 'test@qwe.com'});
 
 router.get('/', function (req, res) {
   res.json(phoneBookDb.get());
