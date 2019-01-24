@@ -1,0 +1,19 @@
+.pl-add-btn {
+  bottom: 1rem;
+  right: 1rem;
+  display: block;
+}
+
+.pl-items {
+  padding-bottom: 2rem;
+  overflow-y: auto;
+  height: 18rem;
+}
+
+.pl-container {
+  overflow: hidden;
+}
+
+.phone-book {
+  width: 35rem;
+}

@@ -1,0 +1,40 @@
+{
+  "name": "softmotionstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/server.js",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autobind-decorator": "^2.4.0",
+    "body-parser": "^1.18.3",
+    "consolidate": "^0.15.1",
+    "css-loader": "^2.0.2",
+    "express": "^4.16.4",
+    "icons.css": "git+https://github.com/picturepan2/icons.css.git",
+    "mithril": "^1.1.6",
+    "spectre.css": "^0.5.8"
+  },
+  "devDependencies": {
+    "@types/mithril": "^1.1.14",
+    "@types/node": "^10.12.18",
+    "@types/webpack-env": "^1.13.6",
+    "autoprefixer": "^9.4.3",
+    "clean-webpack-plugin": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "postcss-loader": "^3.0.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "uglifyjs-webpack-plugin": "^2.1.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "write-file-webpack-plugin": "^4.5.0"
+  }
+}
