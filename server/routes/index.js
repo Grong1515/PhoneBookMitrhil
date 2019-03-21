@@ -10,7 +10,7 @@ router.use(function timeLog(req, res, next) {
   next();
 });
 // define the home page route
-router.use('/', home);
+// router.use('/', home);
 router.use('/api', api);
 
 module.exports = router;
