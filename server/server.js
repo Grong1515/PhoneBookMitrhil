@@ -21,6 +21,12 @@ app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 app.use('/static', express.static(path.join(__dirname, '../bundle')));
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 /* DEV TOOLS */
 if (process.env.NODE_ENV !== 'prod') (function () {
   const webpack = require('webpack');
