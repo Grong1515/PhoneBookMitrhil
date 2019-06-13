@@ -2,6 +2,7 @@ const fs = require('fs');
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require('cors')
 
 const globals = require('./globals');
 // const db = require('../db');
@@ -19,13 +20,9 @@ app.engine('html', function (filePath, options, callback) {
 });
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
+app.use(cors())
 app.use('/static', express.static(path.join(__dirname, '../bundle')));
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
 
 /* DEV TOOLS */
 if (process.env.NODE_ENV !== 'prod') (function () {
