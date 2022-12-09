@@ -21,7 +21,7 @@
     "consolidate": "^0.15.1",
     "cors": "^2.8.5",
     "css-loader": "^2.0.2",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "icons.css": "git+https://github.com/picturepan2/icons.css.git",
     "mithril": "^1.1.6",
